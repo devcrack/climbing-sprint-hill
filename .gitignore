@@ -1,0 +1,49 @@
+# Java / Maven / Spring Boot standard ignores
+
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+.mvn/timing.properties
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+.Spotlight-V100
+.Trashes
+
+# IDEs and editors
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+
+# Build outputs (other tools)
+out/
+bin/
+build/
+.gradle/
+
+# Environment / local config
+.env
+.env.*
+
+# Coverage / reports (usually in target/, but keep explicit just in case)
+jacoco.exec
+coverage/
+.surefire-*
+
+# Misc
+*.swp
+*.swo
