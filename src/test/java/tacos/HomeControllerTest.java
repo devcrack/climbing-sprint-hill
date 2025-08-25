@@ -20,9 +20,9 @@ public class HomeControllerTest {
 
     @Test
     public void testHomePage() throws Exception {
-        mockMvc.perform(get("/"))
-            .andExpect(status().isOk())
-            .andExpect(view().name("home"))
-            .andExpect(content().string(containsString("Welcome to...")));
+        mockMvc.perform(get("/"))  // Mocks a GET request to  performs a Get request
+            .andExpect(status().isOk())  // Expects a 200 OK response
+            .andExpect(view().name("home")) //Expects home view
+            .andExpect(content().string(containsString("Welcome to...")));  // Expects the body to contain the string Welcome to...
     }
 }
